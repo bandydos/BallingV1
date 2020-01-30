@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>balling</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid bg-info text-white">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-lg-10">
+                        <h1>Ballers agenda</h1>
+                    </div>
+                    <div class="col-lg-2">
+                        <img class="image-small" src="images/icon.gif">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <input id="date-in" class="form-control" type="date">
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <select class="form-control" id="select-home-team">
+                    </select>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <select class="form-control" id="select-away-team">
+                    </select>
+                </div>
+                <div class="col-lg-1 col-md-12 mt-3 mt-lg-0 mt-md-3 mt-sm-3 mt-xs-3">
+                    <button id="btn-send" class="btn btn-primary float-right">SAVE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-5 row justify-content-center">
+        <div class="col-8">
+            <table class="table table-sm text-center border">
+                <thead>
+                    <th class="col-2">date</th>
+                    <th class="col-6">game</th>
+                </thead>
+                <tbody id="message-table">
+                    <td class="col-2">05/02/2020</td>
+                    <td class="col-6">Golden State vs The Rockets</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
