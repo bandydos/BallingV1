@@ -8,3 +8,7 @@ app.listen(3000, function(){
 app.use(express.static('public'));
 app.use(express.static('node_modules/jquery/dist'));
 app.use(express.static('node_modules/bootstrap/dist')); 
+
+app.post('/api', function(req, res){
+    console.log(req); //Request data from client.
+});
