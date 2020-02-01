@@ -15,25 +15,31 @@ $(document).ready(function(){
 function getDate(){
     var dateIn = document.getElementById("date-in");
     var date = dateIn.value;
-    console.log(date);
+    return date;
 }
 
 function getHomeTeam(){
     var selectHomeTeam = document.getElementById("select-home-team");
     var homeTeam = selectHomeTeam.value;
-    console.log(homeTeam);
+    return homeTeam;    
 }
 
 function getAwayTeam(){
     var selectAwayTeam = document.getElementById("select-away-team");
     var awayTeam = selectAwayTeam.value;
-    console.log(awayTeam);
+    return awayTeam;
 }
 
 const btnSend = document.getElementById("btn-send");
 btnSend.onclick = function(){
-    getDate();
-    getHomeTeam();
-    getAwayTeam();
+    var date = getDate();
+    var home  = getHomeTeam();
+    var away = getAwayTeam();
+    var data = {
+        date,
+        home,
+        away
+    };
+    console.log(data);
 }
 
