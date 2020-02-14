@@ -66,7 +66,6 @@ async function getData() {
     const response = await fetch('/api'); //Await get fetch.
     const data = await response.json(); //Wait for response from server.
     const gameTable = document.getElementById("game-table")
-    var i;
     for (item of data){
         const row = document.createElement("tr");
         const colDate = document.createElement("td");
