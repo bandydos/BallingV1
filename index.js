@@ -30,4 +30,4 @@ app.get('/api', function (req, res) { //GET
             res.json(data); //Send json response with data.
         }
     });
-});
+}); //Git update
